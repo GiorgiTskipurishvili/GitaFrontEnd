@@ -1,0 +1,14 @@
+.changeColor{
+  color: red;
+}
+
+.nameBox{
+  background-color: red;
+  padding-block: 20px;
+  border: 1px solid black
+}
+
+.changeNameComponentBgColor{
+  background-color: green;
+}
+
