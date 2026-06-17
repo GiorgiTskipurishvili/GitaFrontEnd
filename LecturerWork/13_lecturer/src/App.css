@@ -1,0 +1,11 @@
+
+.admin-card{
+    background-color: aqua;
+    border: 3px solid black;
+}
+
+
+.user-card{
+    background-color: red;
+    border: 3px solid black;
+}
