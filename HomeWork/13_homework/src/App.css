@@ -1,0 +1,24 @@
+.card {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.electronics-card {
+  border: 3px solid blue;
+  background-color: #eef5ff;
+}
+
+.other-card {
+  border: 2px solid gray;
+  background-color: #f5f5f5;
+}
+
+button {
+  padding: 8px 15px;
+}
+.cartOfDiv{
+  padding: 15px;
+  background-color: rebeccapurple;
+  border-radius: 25px;
+  color: white;
+}
