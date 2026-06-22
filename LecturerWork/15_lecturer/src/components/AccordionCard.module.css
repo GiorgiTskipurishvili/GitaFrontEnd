@@ -1,0 +1,14 @@
+.AccordionCard{
+    background-color: gray;
+    width: 200px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.fontFirst{
+    font-family: monospace;
+}
+
+.fontSecond{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
