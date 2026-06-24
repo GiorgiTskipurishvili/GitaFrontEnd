@@ -4,26 +4,126 @@
     height: 509px;
     border-radius: 20px;
     display: flex;
-
     align-items: center;
     justify-content: space-between;
     text-align: left;
+    position: relative;
+    clip-path: inset(0 -120px -200px -120px round 20px);
 }
+
+
+/* Image */
+
+.logoWrapper {
+    position: relative;
+    display: inline-block;
+}
+
+
+.ShadowImg {
+    position: absolute;
+    bottom: -164px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+
+.FirstLinerImg {
+    position: absolute;
+    top: -75px;
+    left: 0;
+    z-index: 1;
+}
+
+.SecondLinerImg {
+    position: absolute;
+    top: -75px;
+    right: 0;
+    z-index: 1;
+}
+
+
+.LogoImg {
+    position: relative;
+    display: block;
+    width: 100%;
+    z-index: 2;
+}
+
+.BoxImg {
+    position: absolute;
+    top: 143px;
+    left: -91px;
+    z-index: 3;
+}
+
+
+.LogoMobileImg, .ShadowMobileImg, .BoxImgMobile{
+    display: none;
+}
+
+.faq{
+    color: rgba(30, 31, 54, 1);
+}
+
+
 
 @media (max-width: 768px) {
     .AccordionCard {
         flex-direction: column;
         max-width: 327px;
         min-height: 535px;
-        padding: 20px;
+        padding: 24px;
         justify-content: flex-start;
         align-items: center;
-        justify-content: space-between;
-        gap: 20px;
+        gap: 28px;
+        clip-path: none;
     }
 
-    .AccordionCard img {
-        width: 150px;  
-        height: auto;
+    .logoWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: -80px; 
+    }
+
+    .LogoMobileImg,
+    .ShadowMobileImg {
+        display: block;
+    }
+
+
+    .LogoMobileImg {
+        position: relative;
+        z-index: 2;
+        top: -50px;
+    }
+    .ShadowMobileImg {
+        position: absolute;
+        bottom: 20px;
+        z-index: 1;
+    }
+
+    .BoxImg{
+        height: 53px;
+        position: absolute;
+        top: 41px;
+        left: 14px;
+        z-index: 3;
+    }
+    
+    .ShadowImg, .FirstLinerImg, .SecondLinerImg,.LogoImg{
+        display: none;
+    }
+
+    .item_container{
+        width: 279px;
+    }
+    .faq{
+        text-align: center;
     }
 }
+
+

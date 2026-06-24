@@ -1,21 +1,48 @@
+
 .AccordionItem{
-    max-width: 350px;
+    width: 350px;
     height: auto;
+    padding-right: 95px;
 }
 
 .AccordionItemH2{
-    font-size: 18px;
+    font-size: 14px;
     color: #4B4C5F;
+    font-weight: 400;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
 }
+
+.AccordionItemH2:hover{
+    color: rgba(244, 123, 86, 1);
+}
+
 .AccordionItemH2BoldActive{
-    font-weight: bold;
+    font-weight: 700;
     color: black
 }
 
 .AccordionItemP{
-    font-size: 18px;
+    width: 320px;
+    font-size: 12px;
+    font-weight: 400;
     color: #787887;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.AccordingItemDropDownRotate{
+    rotate: 180deg;
+    
+}
+
+@media (max-width: 768px) {
+    .AccordionItemH2{
+        max-width: 279px;
+    }
+    .AccordionItemP{
+        max-width: 279px;
+    }
+
 }
