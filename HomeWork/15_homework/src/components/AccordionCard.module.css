@@ -1,0 +1,29 @@
+.AccordionCard{
+    background-color: white;
+    width: 920px;
+    height: 509px;
+    border-radius: 20px;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .AccordionCard {
+        flex-direction: column;
+        max-width: 327px;
+        min-height: 535px;
+        padding: 20px;
+        justify-content: flex-start;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .AccordionCard img {
+        width: 150px;  
+        height: auto;
+    }
+}

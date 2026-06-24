@@ -1,0 +1,21 @@
+.AccordionItem{
+    max-width: 350px;
+    height: auto;
+}
+
+.AccordionItemH2{
+    font-size: 18px;
+    color: #4B4C5F;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+.AccordionItemH2BoldActive{
+    font-weight: bold;
+    color: black
+}
+
+.AccordionItemP{
+    font-size: 18px;
+    color: #787887;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
