@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;  
+}
+
+body {
+  background: #eaf6ee;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 180px;
+}
+
+.title-todo h1 {
+  font-size: 72px;
+  color: rgba(0, 127, 219, 1);
+}

@@ -1,0 +1,40 @@
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #f9fafb;
+  padding: 12px 15px;
+  border-radius: 15px;
+  margin-top: 12px;
+}
+
+.todo-left h3 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.todo-left p {
+  font-size: 11px;
+  color: #9aa0a6;
+  margin-top: 3px;
+}
+
+.todo-right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.todo-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* completed style */
+.completed {
+  text-decoration: line-through;
+  color: #9aa0a6;
+}

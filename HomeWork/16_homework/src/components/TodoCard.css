@@ -1,0 +1,76 @@
+.todo-card {
+  width: 430px;
+  background: #ffffff;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+.header{
+  position: relative;
+  width: 100%;
+}
+.wallpaper{
+    width: 100%;
+    display: block;
+}
+.title {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  text-align: right;
+}
+
+.title p, h1{
+  font-family: "Russo One", sans-serif;
+}
+
+.todo-input {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
+.input-section{
+  display: flex;
+  align-items: center;
+  background: rgba(235, 239, 242, 1);
+  padding: 12px 14px;
+  width: 275px;
+}
+
+
+.input-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    cursor: pointer;
+}
+
+
+
+.todo-input input {
+  flex: 1;
+  padding: 5px 15px;  
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.todo-input button {
+  width: 88px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(32, 238, 176, 1);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.todo-input button:hover{
+    background: rgb(16, 224, 109);
+}
+
+
+.list{
+    padding: 36px 28px 78px 29px;
+}
