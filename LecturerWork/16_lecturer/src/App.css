@@ -1,0 +1,83 @@
+.app {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #eaf4ff, #f6fbff);
+  color: #172b4d;
+}
+
+.weather-card {
+  width: min(560px, 100%);
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 12px 30px rgba(38, 57, 77, 0.15);
+}
+
+.app-title {
+  margin: 0 0 18px;
+  text-align: center;
+  font-size: 28px;
+}
+
+.city-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.city-button {
+  border: none;
+  border-radius: 999px;
+  padding: 8px 14px;
+  background: #edf2ff;
+  color: #253858;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.city-button:hover {
+  background: #dde7ff;
+}
+
+.city-button.active {
+  background: #1f6feb;
+  color: #ffffff;
+}
+
+.city-details {
+  border-radius: 12px;
+  padding: 14px;
+  background: #f7faff;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.city-details h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.city-details p {
+  margin: 4px 0;
+}
+
+.live-toggle {
+  margin-bottom: 12px;
+}
+
+.live-toggle-button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  background: #198754;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.live-toggle-button:hover {
+  background: #157347;
+}
