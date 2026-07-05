@@ -7,7 +7,13 @@ import WhiteLink from "../assets/whiteLink.svg"
 import WhiteOrganization from "../assets/whiteOrganization.svg"
 import WhiteTwitter from "../assets/whiteTwittersvg.svg"
 import WhiteLocation from "../assets/whiteLocation.svg"
-export default function CardComponent({ user, theme }) {
+import type { GitHubUser } from "../types";
+type Props = {
+  user: GitHubUser;
+  theme: string;
+};
+
+export default function CardComponent({ user, theme }:Props) {
   return (
     <div className="card-container">
       <div className="user-img">

@@ -1,8 +1,11 @@
 import gr5 from "../assets/Group5.svg"
 import gr6 from "../assets/Group6.svg"
 import './DarkLight.css'
-
-export default function DarkLightComponent({theme, setTheme}) {
+type Props = {
+  theme: string;
+  setTheme: (value: string) => void;
+};
+export default function DarkLightComponent({theme, setTheme}:Props) {
   return (
     <>
     <div className="DarkLight-container">

@@ -1,12 +1,19 @@
 import "./Search.css";
 import SearchLogo from "../assets/search.svg";
 
+type Props = {
+  username: string;
+  setUsername: (value: string) => void;
+  searchUser: () => void;
+  error: string;
+};
+
 export default function SearchComponent({
   username,
   setUsername,
   searchUser,
   error,
-}) {
+}:Props) {
   return (
     <div className="search-container">
       <div className="search-input">
