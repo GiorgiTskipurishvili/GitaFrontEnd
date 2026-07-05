@@ -1,0 +1,31 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 30px 24px 48px;
+}
+
+.app.light {
+  background-color: #f6f8ff;
+  color: #141d2f;
+}
+
+.app.dark {
+  background-color: #141d2f;
+  color: #ffffff;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 730px;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container .search-container {
+  margin-top: 36px;
+}
+
+.app-container .card-container {
+  margin-top: 24px;
+}
