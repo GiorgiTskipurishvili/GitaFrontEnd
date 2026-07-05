@@ -1,0 +1,169 @@
+.card-container {
+  width: 100%;
+  min-height: 419px;
+  background: #ffffff;
+  border-radius: 15px;
+
+  display: flex;
+  gap: 37px;
+
+  padding: 48px;
+  box-sizing: border-box;
+
+  box-shadow: 0 16px 30px rgba(70, 96, 187, 0.2);
+}
+
+.user-img {
+  flex-shrink: 0;
+}
+
+.user-img img {
+  width: 117px;
+  height: 117px;
+  border-radius: 50%;
+  display: block;
+}
+
+.user-about {
+  flex: 1;
+  min-width: 0;
+}
+
+.user-about__header {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.user-title h1 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.user-title p {
+  font-size: 15px;
+  color: #697c9a;
+  white-space: nowrap;
+}
+
+.tag {
+  margin-top: 4px;
+  color: #0079ff;
+  font-size: 16px;
+}
+
+.bio {
+  margin-top: 20px;
+  color: #697c9a;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.repo-container {
+  margin-top: 32px;
+
+  width: 100%;
+  height: 85px;
+
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.repo-container.light {
+  background: #f6f8ff;
+}
+
+.repo-container.dark {
+  background: #141d2f;
+}
+
+.repo-container__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.repo-container__inner p {
+  font-size: 13px;
+  color: #697c9a;
+}
+
+.repo-container__inner h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.light .card-container {
+  background: #ffffff;
+}
+
+.dark .card-container {
+  background: #1e2a47;
+  color: #ffffff;
+  box-shadow: none;
+}
+
+.links {
+  padding-top: 37px;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.link-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+  min-width: 0;
+}
+
+.link-container img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.link-container p {
+  font-size: 15px;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.link-container a {
+  color: #0079ff;
+  text-decoration: none;
+}
+
+.link-container a:hover {
+  text-decoration: underline;
+}
+
+.muted {
+  color: #697c9a;
+}
+
+.dark .repo-container__inner h2 {
+  color: #ffffff;
+}
