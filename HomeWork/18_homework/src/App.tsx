@@ -1,3 +1,71 @@
+<<<<<<< HEAD
+=======
+// import { useState } from 'react'
+// import './App.css'
+// import DarkLightComponent from './components/DarkLightComponent'
+// import SearchComponent from './components/SearchComponent'
+// import CardComponent from './components/CardComponent'
+
+// function App() {
+//   const [theme, setTheme] = useState("light")
+
+//   return (
+//     <>
+//       <div className={theme}>
+//         <DarkLightComponent theme={theme} setTheme={setTheme} />
+//         <SearchComponent />
+//         <CardComponent />
+//       </div>
+//     </>
+//   )
+// }
+
+// export default App
+
+
+// import { useState } from "react";
+// import "./App.css";
+// import DarkLightComponent from "./components/DarkLightComponent";
+// import SearchComponent from "./components/SearchComponent";
+// import CardComponent from "./components/CardComponent";
+
+// function App() {
+//   const [theme, setTheme] = useState("light");
+//   const [username, setUsername] = useState("");
+//   const [user, setUser] = useState(null);
+
+//   async function searchUser() {
+//     if (!username) return;
+
+//     try {
+//       const res = await fetch(`https://api.github.com/users/${username}`);
+//       const data = await res.json();
+
+//       setUser(data);
+//     } catch (err) {
+//       console.log(err);
+//     }
+//   }
+
+//   return (
+//     <div className={theme}>
+//       <DarkLightComponent theme={theme} setTheme={setTheme} />
+
+//       <SearchComponent
+//         username={username}
+//         setUsername={setUsername}
+//         searchUser={searchUser}
+//       />
+
+//       {user && <CardComponent user={user} />}
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+>>>>>>> 9b0a8218b47d578674113a85939470f5fdcf8cfd
 
 import { useState } from "react";
 import "./App.css";

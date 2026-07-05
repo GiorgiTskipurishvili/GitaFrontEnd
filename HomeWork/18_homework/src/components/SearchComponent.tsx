@@ -1,3 +1,59 @@
+<<<<<<< HEAD
+=======
+// import "./Search.css"
+// import SearchLogo from "../assets/search.svg"
+
+// export default function SearchComponent() {
+//   return (
+//     <div className="search-container">
+//       <div className="search-input">
+//         <img src={SearchLogo} alt="search" className="search-icon" />
+
+//         <input
+//           type="text"
+//           placeholder="Search GitHub username..."
+//         />
+//       </div>
+
+//       <button className="search-btn">Search</button>
+//     </div>
+//   )
+// }
+
+
+// import "./Search.css";
+// import SearchLogo from "../assets/search.svg";
+
+// export default function SearchComponent({
+//   username,
+//   setUsername,
+//   searchUser,
+// }) {
+//   return (
+//     <div className="search-container">
+//       <div className="search-input">
+//         <img src={SearchLogo} alt="" />
+
+//         <input
+//           value={username}
+//           onChange={(e) => setUsername(e.target.value)}
+//           type="text"
+//           placeholder="Search GitHub username..."
+//         />
+//       </div>
+
+//       <button
+//         className="search-btn"
+//         onClick={searchUser}
+//       >
+//         Search
+//       </button>
+//     </div>
+//   );
+// }
+
+
+>>>>>>> 9b0a8218b47d578674113a85939470f5fdcf8cfd
 import "./Search.css";
 import SearchLogo from "../assets/search.svg";
 

@@ -1,7 +1,21 @@
+<<<<<<< HEAD
+=======
+// import DarkMoon from "../assets/darkmoon.svg"
+// import LightMoon from "../assets/lightmoon.svg"
+>>>>>>> 9b0a8218b47d578674113a85939470f5fdcf8cfd
 import gr5 from "../assets/Group5.svg"
 import gr6 from "../assets/Group6.svg"
 import './DarkLight.css'
 
+<<<<<<< HEAD
+=======
+
+// type Props = {
+//     theme: string
+//     setTheme: React.Dispatch<React.SetStateAction<string>>;
+// }
+
+>>>>>>> 9b0a8218b47d578674113a85939470f5fdcf8cfd
 export default function DarkLightComponent({theme, setTheme}) {
   return (
     <>
