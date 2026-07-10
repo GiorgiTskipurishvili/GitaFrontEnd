@@ -1,0 +1,104 @@
+*{
+  font-family: "Kumbh Sans", sans-serif;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 165px; 
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+.logo{
+  padding-right: 56.5px;
+}
+
+.navbar{
+  padding-right: 400px;
+}
+.navbar ul{
+  display: flex;
+  gap: 32px;
+  list-style: none;
+
+}
+
+.navbar li{
+  color: rgba(105, 112, 125, 1);
+  cursor: pointer;
+}
+.navbar li:hover{
+  color: black;
+}
+
+.btns{
+  display: flex;
+  align-items: center;
+  gap: 46px;
+}
+.btns button{
+  background: none;
+  border: none;
+}
+
+.basket-wrapper{
+  position: relative;
+}
+.basket-wrapper button{
+  position: relative;
+}
+.badge{
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: rgba(255, 126, 27, 1);
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger-btn{
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px){
+  header{
+    justify-content: space-between;
+    padding: 16px;
+  }
+  .hamburger-btn{
+    display: block;
+  }
+  .navbar{
+    display: none;
+  }
+  .logo{
+    padding-right: 0;
+  }
+  .btns{
+    gap: 16px;
+  }
+  .cart-container{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    width: auto;
+    margin: 0 16px;
+  }
+}
