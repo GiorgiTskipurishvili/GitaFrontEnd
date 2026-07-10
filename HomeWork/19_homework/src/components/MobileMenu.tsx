@@ -1,6 +1,10 @@
 import "./MobileMenu.css";
 
-export default function MobileMenu({ onClose }) {
+interface MobileMenuProps {
+  onClose: () => void;
+}
+
+export default function MobileMenu({ onClose }: MobileMenuProps) {
   return (
     <div className="mobile-menu-overlay" onClick={onClose}>
       <div className="mobile-menu-panel" onClick={(e) => e.stopPropagation()}>

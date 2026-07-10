@@ -8,14 +8,22 @@ import CardComponent from "./components/CardComponent";
 import CartComponent from "./components/CartComponent";
 import MobileMenu from "./components/MobileMenu";
 
+interface CartItem {
+  id: string;
+  title: string;
+  price: number;
+  image: string;
+  qty: number;
+}
+
 function App() {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState<CartItem[]>([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const totalQty = cart.reduce((sum, item) => sum + item.qty, 0);
 
-  function addToCart(item) {
+  function addToCart(item: CartItem) {
     setCart((prev) => {
       const existing = prev.find((p) => p.id === item.id);
       if (existing) {
@@ -28,7 +36,7 @@ function App() {
     // setIsCartOpen(true)
   }
 
-  function removeFromCart(id) {
+  function removeFromCart(id: string) {
     setCart((prev) => prev.filter((item) => item.id !== id));
   }
 

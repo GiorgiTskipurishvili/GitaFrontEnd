@@ -14,7 +14,19 @@ import { useState } from "react";
 
 const images = [Image1, Image2, Image3, Image4];
 
-export default function CardComponent({ onAddToCart }) {
+interface CartItem {
+  id: string;
+  title: string;
+  price: number;
+  image: string;
+  qty: number;
+}
+
+interface CardComponentProps {
+  onAddToCart: (item: CartItem) => void;
+}
+
+export default function CardComponent({ onAddToCart }: CardComponentProps) {
   const [count, setCount] = useState(0);
   const [activeIndex, setActiveIndex] = useState(0);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);

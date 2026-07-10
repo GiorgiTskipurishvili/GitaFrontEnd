@@ -1,7 +1,21 @@
-import "./CartComponent.css";
-import Delete from "../assets/delete.svg";
+import "./CartComponent.css"
+import Delete from "../assets/delete.svg"
 
-export default function CartComponent({ cart, onRemove, onCheckout }) {
+interface CartItem {
+  id: string;
+  title: string;
+  price: number;
+  image: string;
+  qty: number;
+}
+
+interface CartComponentProps {
+  cart: CartItem[];
+  onRemove: (id: string) => void;
+  onCheckout: () => void;
+}
+
+export default function CartComponent({ cart, onRemove, onCheckout }: CartComponentProps) {
   return (
     <div className="cart-container">
       <div className="header">
@@ -19,9 +33,7 @@ export default function CartComponent({ cart, onRemove, onCheckout }) {
                 <div className="product-about">
                   <p>{item.title}</p>
                   <div className="total">
-                    <p>
-                      ${item.price.toFixed(2)} x {item.qty}
-                    </p>
+                    <p>${item.price.toFixed(2)} x {item.qty}</p>
                     <p className="total-price">
                       ${(item.price * item.qty).toFixed(2)}
                     </p>
