@@ -1,0 +1,17 @@
+header h1{
+  color: #3D6666;
+}
+
+body {
+  margin: 0;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-color: #c1e4e6;
+}
