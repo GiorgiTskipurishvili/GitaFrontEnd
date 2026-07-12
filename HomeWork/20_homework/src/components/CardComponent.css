@@ -196,3 +196,40 @@ button{
     font-weight: bold;
     pointer-events: none;
 }
+
+@media screen and (max-width: 920px) {
+  .card-container {
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    gap: 32px;
+    padding: 24px;
+  }
+
+  .left-card__container,
+  .right-card__container {
+    width: 80%;
+  }
+
+  .bill-container input,
+  .people-container input,
+  .right-card__container button {
+    width: 100%;
+    box-sizing: border-box;
+    color: #00474B;
+  }
+
+  .btns button,
+  .btns input {
+    width: 100%;
+  }
+
+  .btns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .total-container {
+    padding-bottom: 40px;
+  }
+}
