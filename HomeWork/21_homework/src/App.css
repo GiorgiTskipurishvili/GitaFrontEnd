@@ -1,22 +1,22 @@
-header{
+header {
   /* background-color: blueviolet; */
-  display:  flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   /* padding-left: 32px;
   padding-right: 40px; */
   padding: 22px 40px 27px 32px;
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid #ffffff;
 }
 
-header h1{
+header h1 {
   margin: 0;
   font-family: "Antonio", sans-serif;
   font-size: 28px;
   font-weight: 400;
 }
 
-header nav{
+header nav {
   display: flex;
   gap: 33px;
   font-weight: 700;
@@ -24,7 +24,7 @@ header nav{
   font-family: "League Spartan", sans-serif;
 }
 
-nav a{
+nav a {
   text-decoration: none;
   color: #c2c1c7;
 }
@@ -80,7 +80,7 @@ nav a{
   background-color: #6D2ED5;
 } */
 
-.planet-container{
+.planet-container {
   max-width: 1200px;
   margin: 0 auto;
   gap: 142px;
@@ -89,58 +89,56 @@ nav a{
   padding-top: 96px;
 }
 
-.introduce-container{
+.introduce-container {
   display: flex;
   /* gap: 220px; */
-    align-items: center;
+  align-items: center;
   justify-content: space-between;
-
 }
 
-.planet-about__container{
+.planet-about__container {
   width: 350px;
 }
-.planet-header h1{
+.planet-header h1 {
   margin: 0;
   margin-bottom: 23px;
 }
-.planet-overview{
+.planet-overview {
   /* width: 350px; */
   font-size: 14px;
   font-weight: 400;
-  font-family: "League Spartan", sans-serif;  
+  font-family: "League Spartan", sans-serif;
   color: rgb(255, 255, 255);
 }
-.planet-overview p{
-  margin: 0 ;
+.planet-overview p {
+  margin: 0;
   margin-bottom: 24px;
 }
-.source{
+.source {
   margin-bottom: 34px;
   display: flex;
   align-items: center;
-  
 }
-.source span{
+.source span {
   font-size: 14px;
   font-weight: 400;
-  font-family: "League Spartan", sans-serif; 
+  font-family: "League Spartan", sans-serif;
   color: #7c7a88;
 }
-.source a{
+.source a {
   font-size: 14px;
   font-weight: 700;
-  font-family: "League Spartan", sans-serif; 
+  font-family: "League Spartan", sans-serif;
   color: #848290;
   padding-right: 8px;
 }
 
-.planet-overview__source-group{
+.planet-overview__source-group {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-.change-planet{
+.change-planet {
   display: flex;
   align-items: center;
   width: 100%;
@@ -151,54 +149,52 @@ nav a{
   padding-left: 28px;
   transition: 0.2s;
 }
-.change-planet:hover{
+.change-planet:hover {
   background-color: #313148;
 }
 
-
-.change-planet.earth.active{
-    background:#6D2ED5;
+.change-planet.earth.active {
+  background: #6d2ed5;
 }
 
-.change-planet.jupiter.active{
-    background:#D83A34;
+.change-planet.jupiter.active {
+  background: #d83a34;
 }
-.change-planet.mars.active{
-    background: rgba(209, 76, 50, 1);
+.change-planet.mars.active {
+  background: rgba(209, 76, 50, 1);
 }
-.change-planet.mercury.active{
-    background: rgba(65, 158, 187, 1);
+.change-planet.mercury.active {
+  background: rgba(65, 158, 187, 1);
 }
-.change-planet.neptune.active{
-    background: rgba(65, 158, 187, 1);
+.change-planet.neptune.active {
+  background: rgba(65, 158, 187, 1);
 }
-.change-planet.saturn.active{
-    background: rgba(205, 81, 32, 1);
+.change-planet.saturn.active {
+  background: rgba(205, 81, 32, 1);
 }
-.change-planet.uranus.active{
-    background: rgba(30, 193, 162, 1);
+.change-planet.uranus.active {
+  background: rgba(30, 193, 162, 1);
 }
-.change-planet.venus.active{
-    background: rgba(237, 162, 73, 1);
+.change-planet.venus.active {
+  background: rgba(237, 162, 73, 1);
 }
 
-.change-planet span{
+.change-planet span {
   color: #848290;
-  font-family: "League Spartan", sans-serif; 
+  font-family: "League Spartan", sans-serif;
 }
-.change-planet p{
+.change-planet p {
   margin: 0;
-  color: #FFFFFF;
-  font-family: "League Spartan", sans-serif; 
+  color: #ffffff;
+  font-family: "League Spartan", sans-serif;
 }
 
-.details-container{
+.details-container {
   display: flex;
   gap: 32px;
-
 }
 
-.details{
+.details {
   display: flex;
   flex-direction: column;
   width: 255px;
@@ -210,25 +206,24 @@ nav a{
   gap: 4px;
 }
 
-.details h1{
+.details h1 {
   margin: 0;
   font-size: 40px;
   font-weight: 400;
   font-family: "Antonio", sans-serif;
   padding-left: 23px;
 }
-.details p{
+.details p {
   margin: 0;
   font-size: 11px;
   font-weight: 700;
   font-family: "League Spartan", sans-serif;
-  color: rgba(255, 255, 255, .5);
+  color: rgba(255, 255, 255, 0.5);
   padding-left: 23px;
 }
 
-
 /* img */
-.planet-img__container{
+.planet-img__container {
   width: 450px;
   height: 450px;
   position: relative;
@@ -237,7 +232,9 @@ nav a{
   justify-content: center;
 }
 
-.planet-img__container img:first-child{
+.planet-img__container img:first-child {
+  max-width: 100%;
+  max-height: 100%;
   width: auto;
   height: auto;
 }
@@ -247,9 +244,9 @@ nav a{
   height: 450px; */
 
   /* top: 12px;    */
-  left: 230px; 
+  left: 230px;
 }
-.internal-saturn{
+.internal-saturn {
   position: absolute;
   top: 7px;
   left: 224px;
@@ -263,4 +260,275 @@ nav a{
 
   left: 143px;
   top: 300px;
+}
+
+.hamburger-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* ===================== TABLET ===================== */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+    padding: 24px 40px;
+    flex-direction: column;
+    gap: 39px;
+  }
+
+  header nav {
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .planet-container {
+    padding-top: 77px;
+    gap: 80px;
+  }
+
+  .introduce-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .planet-img__container {
+    width: 300px;
+    height: 300px;
+  }
+
+  .internal {
+    left: 155px;
+    transform: scale(0.7);
+  }
+
+  .geology {
+    left: 95px;
+    top: 200px;
+    transform: scale(0.7);
+  }
+
+  .planet-about__container {
+    width: 100%;
+    max-width: 573px;
+  }
+
+  .details-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .details {
+    width: calc(50% - 12px);
+  }
+  .nav-link.active.active::before {
+    top: auto;
+    bottom: -12px;
+  }
+  .nav-link.active {
+    color: #ffffff;
+  }
+
+  .internal,
+  .internal-saturn,
+  .geology {
+    display: none;
+  }
+}
+
+/* ===================== MOBILE ===================== */
+.label-short {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    padding: 20px 24px;
+    position: relative;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  .hamburger-btn {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+
+  header nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+    background: #070724;
+    z-index: 10;
+    border-top: 1px solid #38384a;
+  }
+  header nav.nav-open {
+    display: flex;
+  }
+  nav a {
+    padding: 16px 24px;
+    border-bottom: 1px solid #38384a;
+    color: #c2c1c7;
+    font-size: 13px;
+  }
+  .nav-link.active::before {
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+  }
+
+  .planet-container {
+    padding: 32px 24px 40px;
+    gap: 32px;
+  }
+
+  .introduce-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .planet-about__container {
+    display: contents;
+    width: 100%;
+  }
+
+  .planet-overview__source-group {
+    order: -1;
+    flex-direction: row;
+    gap: 0;
+    width: 100%;
+    border-bottom: 1px solid #38384a;
+  }
+
+  .planet-img__container {
+    order: 0;
+    width: 130px;
+    height: 130px;
+  }
+
+  .planet-header {
+    order: 1;
+  }
+  .planet-overview {
+    order: 2;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .source {
+    order: 3;
+    justify-content: center;
+  }
+
+  .planet-header h1 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .change-planet {
+    flex: 1;
+    border: none;
+    background: none;
+    padding: 0 0 14px;
+    justify-content: center;
+    gap: 5px;
+    height: auto;
+  }
+  .change-planet:hover {
+    background: none;
+  }
+
+  .change-planet .tab-number {
+    display: none;
+  }
+  .change-planet p {
+    color: #838391;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+  }
+  .change-planet.active p {
+    color: #ffffff;
+  }
+
+  .label-full {
+    display: none;
+  }
+  .label-short {
+    display: inline;
+  }
+
+  .change-planet.earth.active,
+  .change-planet.mercury.active,
+  .change-planet.venus.active,
+  .change-planet.mars.active,
+  .change-planet.jupiter.active,
+  .change-planet.saturn.active,
+  .change-planet.uranus.active,
+  .change-planet.neptune.active {
+    background: none;
+    border-bottom: 3px solid transparent;
+  }
+  .change-planet.earth.active {
+    border-bottom-color: #6d2ed5;
+  }
+  .change-planet.mercury.active {
+    border-bottom-color: #419ebb;
+  }
+  .change-planet.venus.active {
+    border-bottom-color: #eda249;
+  }
+  .change-planet.mars.active {
+    border-bottom-color: #d14c32;
+  }
+  .change-planet.jupiter.active {
+    border-bottom-color: #d83a34;
+  }
+  .change-planet.saturn.active {
+    border-bottom-color: #cd5120;
+  }
+  .change-planet.uranus.active {
+    border-bottom-color: #1ec1a2;
+  }
+  .change-planet.neptune.active {
+    border-bottom-color: #2d68f0;
+  }
+
+  .details-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .details {
+    width: 100%;
+    height: 62px;
+    justify-content: center;
+    gap: 2px;
+  }
+  .details h1 {
+    font-size: 20px;
+    padding-left: 16px;
+  }
+  .details p {
+    font-size: 10px;
+    padding-left: 16px;
+  }
+
+  .internal,
+  .internal-saturn,
+  .geology {
+    display: none;
+  }
 }

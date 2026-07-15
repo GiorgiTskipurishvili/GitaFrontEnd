@@ -92,6 +92,8 @@ export default function EarthPage() {
           </div>
         </div>
 
+        
+
         <div className="details-container">
           <div className="details">
             <p>ROTATION TIME</p>
