@@ -1,0 +1,266 @@
+header{
+  /* background-color: blueviolet; */
+  display:  flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding-left: 32px;
+  padding-right: 40px; */
+  padding: 22px 40px 27px 32px;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+header h1{
+  margin: 0;
+  font-family: "Antonio", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+header nav{
+  display: flex;
+  gap: 33px;
+  font-weight: 700;
+  font-size: 11px;
+  font-family: "League Spartan", sans-serif;
+}
+
+nav a{
+  text-decoration: none;
+  color: #c2c1c7;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: #838391;
+  /* padding-top: 28px; */
+}
+.nav-link.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -28px;
+  width: 100%;
+  height: 4px;
+}
+
+.nav-link.mercury.active::before {
+  background: #419ebb;
+}
+
+.nav-link.venus.active::before {
+  background: #eda249;
+}
+
+.nav-link.earth.active::before {
+  background: #6d2ed5;
+}
+
+.nav-link.mars.active::before {
+  background: #d14c32;
+}
+
+.nav-link.jupiter.active::before {
+  background: #d83a34;
+}
+
+.nav-link.saturn.active::before {
+  background: #cd5120;
+}
+
+.nav-link.uranus.active::before {
+  background: #1ec1a2;
+}
+
+.nav-link.neptune.active::before {
+  background: #2d68f0;
+}
+
+/* nav a.active{
+  background-color: #6D2ED5;
+} */
+
+.planet-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 142px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 96px;
+}
+
+.introduce-container{
+  display: flex;
+  /* gap: 220px; */
+    align-items: center;
+  justify-content: space-between;
+
+}
+
+.planet-about__container{
+  width: 350px;
+}
+.planet-header h1{
+  margin: 0;
+  margin-bottom: 23px;
+}
+.planet-overview{
+  /* width: 350px; */
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "League Spartan", sans-serif;  
+  color: rgb(255, 255, 255);
+}
+.planet-overview p{
+  margin: 0 ;
+  margin-bottom: 24px;
+}
+.source{
+  margin-bottom: 34px;
+  display: flex;
+  align-items: center;
+  
+}
+.source span{
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "League Spartan", sans-serif; 
+  color: #7c7a88;
+}
+.source a{
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "League Spartan", sans-serif; 
+  color: #848290;
+  padding-right: 8px;
+}
+
+.planet-overview__source-group{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.change-planet{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  border: 1px solid #393950;
+  cursor: pointer;
+  gap: 28px;
+  padding-left: 28px;
+  transition: 0.2s;
+}
+.change-planet:hover{
+  background-color: #313148;
+}
+
+
+.change-planet.earth.active{
+    background:#6D2ED5;
+}
+
+.change-planet.jupiter.active{
+    background:#D83A34;
+}
+.change-planet.mars.active{
+    background: rgba(209, 76, 50, 1);
+}
+.change-planet.mercury.active{
+    background: rgba(65, 158, 187, 1);
+}
+.change-planet.neptune.active{
+    background: rgba(65, 158, 187, 1);
+}
+.change-planet.saturn.active{
+    background: rgba(205, 81, 32, 1);
+}
+.change-planet.uranus.active{
+    background: rgba(30, 193, 162, 1);
+}
+.change-planet.venus.active{
+    background: rgba(237, 162, 73, 1);
+}
+
+.change-planet span{
+  color: #848290;
+  font-family: "League Spartan", sans-serif; 
+}
+.change-planet p{
+  margin: 0;
+  color: #FFFFFF;
+  font-family: "League Spartan", sans-serif; 
+}
+
+.details-container{
+  display: flex;
+  gap: 32px;
+
+}
+
+.details{
+  display: flex;
+  flex-direction: column;
+  width: 255px;
+  height: 128px;
+  /* padding-top: 20px;
+  padding-left: 23px; */
+  border: 1px solid #393950;
+  justify-content: center;
+  gap: 4px;
+}
+
+.details h1{
+  margin: 0;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Antonio", sans-serif;
+  padding-left: 23px;
+}
+.details p{
+  margin: 0;
+  font-size: 11px;
+  font-weight: 700;
+  font-family: "League Spartan", sans-serif;
+  color: rgba(255, 255, 255, .5);
+  padding-left: 23px;
+}
+
+
+/* img */
+.planet-img__container{
+  width: 450px;
+  height: 450px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.planet-img__container img:first-child{
+  width: auto;
+  height: auto;
+}
+.internal {
+  position: absolute;
+  /* width: 450px;
+  height: 450px; */
+
+  /* top: 12px;    */
+  left: 230px; 
+}
+.internal-saturn{
+  position: absolute;
+  top: 7px;
+  left: 224px;
+}
+
+.geology {
+  position: absolute;
+
+  width: 163px;
+  height: 199px;
+
+  left: 143px;
+  top: 300px;
+}
