@@ -79,6 +79,8 @@ function App() {
       </header>
 
       <Routes>
+        <Route path="/" element={<MercuryPage />} />
+        
         <Route path="/mercury" element={<MercuryPage />} />
         <Route path="/venus" element={<VenusPage />} />
         <Route path="/earth" element={<EarthPage />} />
