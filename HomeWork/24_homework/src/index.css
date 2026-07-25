@@ -1,0 +1,10 @@
+@import "tailwindcss";
+:root{
+    background: #e6f4f5;
+}
+@theme {
+  --color-teal: hsl(180 29% 50%);
+}
+button{
+    cursor: pointer;
+}
