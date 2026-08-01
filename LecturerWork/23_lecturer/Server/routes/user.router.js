@@ -17,7 +17,7 @@ usersRouter.get("/:id", async(req,res)=>{
         return res.status(400).json({message:"invalid id", data:null })
     }
 
-    const findUserById = await usersModel.findById(id)
+    const findUserById = await usersModel.findById(id).select("-password")
     res.json({message:"გილოცავ შენ წარმატებით იპოვე ჩანაწერი ID-ის მიხედვით", data:findUserById})
 })
 
