@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-yellow: #fcb72b;
+  --color-snow: #f2f5f9;
+  --color-navy: #333a44;
+  --color-dark-navy: #495567;
+  --color-dim-gray: #939caa;
+  --color-light-gray: #e5ecf4;
+
+  --font-sans: "Lexend Deca", sans-serif;
+  --font-mono: "Space Mono", monospace;
+
+  --max-width-container: 1110px;
+}
+
+body {
+  color: var(--color-dim-gray);
+  font-family: var(--font-sans);
+}
