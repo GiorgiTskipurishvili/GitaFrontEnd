@@ -76,8 +76,8 @@ export default function HeaderComponent() {
       </aside>
 
       {/* TABLET + MOBILE HEADER */}
-      <header className="lg:hidden w-full h-[72px] px-5 md:px-6 flex items-center">
-        <div className="w-full h-full bg-[#161D2F] rounded-b-[10px] flex items-center justify-between px-5">
+      <header className="lg:hidden w-full h-[72px]  flex items-center">
+        <div className="w-full h-full bg-[#161D2F] flex items-center justify-between px-5">
           {/* Logo */}
           <NavLink to="/">
             <img src={Logo} alt="logo" className="w-[25px] h-[20px]" />
