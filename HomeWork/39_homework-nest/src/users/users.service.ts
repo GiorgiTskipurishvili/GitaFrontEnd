@@ -10,6 +10,23 @@ import { User } from './schema/user.schema';
 export class UsersService {
   constructor(@InjectModel(User.name) private userModel: Model<User>) {}
 
+  // async create(createUserDto: CreateUserDto) {
+  //   const existingUser = await this.userModel.findOne({
+  //     Email: createUserDto.Email,
+  //   });
+  //   if (existingUser) {
+  //     throw new BadRequestException('user already exists');
+  //   }
+
+  //   const hashedPassword = await bcrypt.hash(createUserDto.Password, 10);
+  //   const createUser = await this.userModel.create({
+  //     ...createUserDto,
+  //     Password: hashedPassword,
+  //   });
+
+  //   return createUser;
+  // }
+
   async create(createUserDto: CreateUserDto) {
     const existingUser = await this.userModel.findOne({
       Email: createUserDto.Email,
@@ -18,11 +35,7 @@ export class UsersService {
       throw new BadRequestException('user already exists');
     }
 
-    const hashedPassword = await bcrypt.hash(createUserDto.Password, 10);
-    const createUser = await this.userModel.create({
-      ...createUserDto,
-      Password: hashedPassword,
-    });
+    const createUser = await this.userModel.create(createUserDto);
 
     return createUser;
   }
@@ -48,6 +61,7 @@ export class UsersService {
     return this.userModel.findOne({ Email: email });
   }
 
+  
   async update(id: string, updateUserDto: UpdateUserDto) {
     if (!isValidObjectId(id)) {
       throw new BadRequestException('invalid user id');

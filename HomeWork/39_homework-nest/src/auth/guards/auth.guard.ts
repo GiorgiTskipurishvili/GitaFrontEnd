@@ -1,39 +1,36 @@
-import {
-  CanActivate,
-  ExecutionContext,
-  Injectable,
-  UnauthorizedException,
-} from '@nestjs/common';
-import { JwtService } from '@nestjs/jwt';
-import { Request } from 'express';
+import { BadRequestException, CanActivate, ExecutionContext, Injectable, UnauthorizedException } from "@nestjs/common";
+import { JwtService } from "@nestjs/jwt";
+import { Observable } from "rxjs";
 
 @Injectable()
-export class AuthGuard implements CanActivate {
-  constructor(private jwtService: JwtService) {}
+export class AuthGuard implements CanActivate{
+    constructor(private jwtService:JwtService){}
+    canActivate(context: ExecutionContext): boolean | Promise<boolean> | Observable<boolean> {
+        const request = context.switchToHttp().getRequest()
+        const token = this.getToken(request.headers)
+        if(!token) throw new UnauthorizedException("ტოკენი ვერ მოიძებნა");
 
-  canActivate(context: ExecutionContext): boolean {
-    const request = context.switchToHttp().getRequest<Request & { userId?: string }>();
-    const token = this.extractTokenFromHeader(request.headers);
-
-    if (!token) {
-      throw new UnauthorizedException('Token not provided');
+        try{
+            const payLoad= this.jwtService.verify(token)
+            request.userId = payLoad.userId
+        }catch(error){
+            throw new UnauthorizedException("არასწორი ან ვადაგასული ტოკენი");
+        }
+        return true
     }
 
-    try {
-      const payload = this.jwtService.verify<{ userId: string }>(token);
-      request.userId = payload.userId;
-    } catch {
-      throw new UnauthorizedException('Invalid token');
-    }
+    // getToken(headers){
+    //     console.log(headers)
+    //     if(!headers["authorization"]) return null
 
-    return true;
-  }
+    //     const [type, token] = headers["authorization"].split(" ")
+    //     return type === "Bearer" ? token : null
+    // }
+    getToken(headers: Record<string, any>) { 
+    console.log(headers);
+    if (!headers["authorization"]) return null;
 
-  private extractTokenFromHeader(headers: Request['headers']): string | null {
-    const authorization = headers.authorization;
-    if (!authorization) return null;
-
-    const [type, token] = authorization.split(' ');
-    return type === 'Bearer' ? token : null;
-  }
+    const [type, token] = headers["authorization"].split(" ");
+    return type === "Bearer" ? token : null;
+}
 }

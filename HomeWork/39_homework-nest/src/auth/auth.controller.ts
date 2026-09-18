@@ -1,27 +1,38 @@
-import { Body, Controller, Get, Post, UseGuards } from '@nestjs/common';
+import { Controller, Get, Post, Body, UseGuards, Req } from '@nestjs/common';
 import { AuthService } from './auth.service';
-import { CurrentUser } from './decorators/current-user.decorator';
-import { SingInDto } from './dto/sign-in.dto';
-import { SingUpDto } from './dto/sing-up.dto';
+import { SignUpDto } from './dto/sign-up.dto';
+import { SignInDto } from './dto/sign-in.dto';
 import { AuthGuard } from './guards/auth.guard';
+
+
 
 @Controller('auth')
 export class AuthController {
   constructor(private readonly authService: AuthService) {}
 
-  @Post('sign-up')
-  singUp(@Body() singUpDto: SingUpDto) {
-    return this.authService.SingUp(singUpDto);
+  @Post("/sign-up")
+  signUp(@Body() signUpDto:SignUpDto){
+    return this.authService.SignUp(signUpDto)
   }
 
-  @Post('sign-in')
-  singIn(@Body() signInDto: SingInDto) {
-    return this.authService.SignIn(signInDto);
+  @Post("/sign-in")
+  signIn(@Body() signInDto:SignInDto){
+    return this.authService.SignIn(signInDto)
   }
 
-  @UseGuards(AuthGuard)
-  @Get('current-user')
-  currentUser(@CurrentUser() userId: string) {
+  // @UseGuards(AuthGuard)
+  // @Get("/current-user")
+  // currentUser(@Req() request){
+  //   const userId = request.userId
+  //   console.log(userId)
+  //   return this.authService.currentUser(userId)
+  // }
+
+@UseGuards(AuthGuard)
+  @Get("/current-user")
+  currentUser(@Req() request: any) {
+    const userId = request.userId;   
+    console.log(userId);
     return this.authService.currentUser(userId);
   }
 }
